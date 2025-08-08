@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <div>
+    <form action="">
+        <label for="Fullname">Username:</label>&nbsp;&nbsp;
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>&nbsp;&nbsp;
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="phonenumber">Phone No:</label>&nbsp;
+        <input type="text" id="phonenumber" name="phonenumber" required pattern="[0-9]{10}"><br><br><br>
+        <label for="attendees" id="attendees">No of Attendees:</label>&nbsp;
+        <input type="number" id="attendees" name="attendees" min="1" max="10" required><br><br>
+        <label for="event_date">Event Date:</label>&nbsp;
+        <input type="date" id="event_date" name="event_date" required><br><br>
+        <label for="event_time">Event Time:</label>&nbsp;
+        <input type="time" id="event_time" name="event_time" required><br><br>
+        <label for="event_type">Event Type:</label>&nbsp;
+        <select id="event_type" name="event_type" required>
+            <option value="workshop">Workshop</option>
+            <option value="seminar">Seminar</option>
+            <option value="conference">Conference</option>
+        </select><br><br>
+
+        <label>Tshirt-Size:</label><br><br>
+        <label><input type="radio" name="size" value="S"> S</label>&nbsp;
+        <label><input type="radio" name="size" value="M"> M</label>&nbsp;
+        <label><input type="radio" name="size" value="L"> L</label>&nbsp;
+        <label><input type="radio" name="size" value="XL">XL</label>
+        <br><br>
+        
+        <label>Dietary Restrictions:</label><br><br>
+        <label><input type="checkbox" name="diet" value="veg"> Vegetarian</label><br>
+        <label><input type="checkbox" name="diet" value="glut_free"> Gluten-Free</label><br><br>
+
+        <label>T-shirt Size:</label><br>
+        <label><input type="radio" name="size" value="S"> S</label>
+        <label><input type="radio" name="size" value="M"> M</label>
+        <label><input type="radio" name="size" value="L"> L</label>
+        <label><input type="radio" name="size" value="XL"> XL</label>
+        <br><br>
+
+        <label for="comments">Comments/Questions:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" maxlength="250"></textarea><br><br>
+
+        <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>
